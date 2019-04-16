@@ -6,7 +6,8 @@ var gameModel = GameModel();
         return playerTwoRandomMove(gameModel.board, gameModel.playerTwo).index;
     }
     /**
-     * Random moves by playerTwo based on the empty grids avaialable for clicking
+     * Minimax algorithm to define
+     * random moves by playerTwo based on the empty grids avaialable for clicking
      */
     playerTwoRandomMove = (newBoard, player) => {
         var spots = emptySquares(newBoard);

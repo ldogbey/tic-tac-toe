@@ -10,13 +10,3 @@ var gameModel = GameModel();
             if (!checkTie()) makeMove(bestSpot(), gameModel.playerTwo);
         }
     }
-    /**
-     * Claims the grid clicked and update grid with player's symbol (player) on the board
-     * It also checks if a game is won and then finishes the game to allow board to be cleared
-     */
-    makeMove = (square, player) => {
-        board[square] = player;
-        $ ('#' + square).text(player);
-        var done = isGameWon(board, player);
-        if (done) gameOver(done);
-    }

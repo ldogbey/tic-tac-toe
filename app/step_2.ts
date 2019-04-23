@@ -5,6 +5,6 @@ import { GameModel } from "./step_1";
  * @param gameModel GameModel object
  * @returns true/false
  */
-function isMoveLegal(seletedCell: number, gameModel: GameModel) {
+export function isMoveLegal(seletedCell: number, gameModel: GameModel) {
     return gameModel.board[seletedCell].taken;
 }

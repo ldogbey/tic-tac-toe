@@ -4,7 +4,7 @@ import { GameModel } from "./step_1";
  * @param gameModel gameModel object
  * @returns array of indices of legal moves available
  */
-function allLegalMovesAvailable(gameModel: GameModel) {
+export function allLegalMovesAvailable(gameModel: GameModel) {
     const legalMoves = [];
     for (let i = 0; i < 9; i++) {
         if (!gameModel.board[i].taken){
